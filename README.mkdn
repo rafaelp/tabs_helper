@@ -1,0 +1,46 @@
+TabsHelper
+============
+
+This plugin is a Ruby on Rails helper for tabbed interface with control of current tab and different styled tabs.
+Very useful for web appications.
+
+More information: [http://rafael.adm.br/tabs-helper](http://rafael.adm.br/tabs-helper)
+
+Installation
+-------------
+
+ruby script/plugin install git://github.com/rafaelp/tabs-helper.git
+
+If you got this plugin with SVN or Piston, run: ruby vendor/plugins/tabs-helper/install.rb
+
+To use the tabs_helper you need to include the CSS stylesheet in the <head> of your layout template.
+You can do this either by manually including the files via `stylesheet_link_tag` OR by using the included `tabs_helper_includes` helper method, which will do this for you.
+
+Example
+--------
+
+    # Controller
+    class DashboardController < ApplicationController
+      current_tab :mydashboard
+
+      ...
+      
+    end
+
+    # View
+    <% tabs do |tab| %>
+      <%= tab.account 'Account', account_path, :style => 'float: right' %>
+      <%= tab.users 'Users', users_path, :style => 'float: right' %>
+      <%= tab.mydashboard 'Dashboard', '/' %>
+      <%= tab.projects 'Projects', projects_path %>
+    <% end %>
+
+Licence
+--------
+
+Tabs Helper is released under the MIT licence.
+
+Author
+-------
+
+[Rafael Lima](http://rafael.adm.br)
