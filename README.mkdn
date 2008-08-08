@@ -4,12 +4,12 @@ TabsHelper
 This plugin is a Ruby on Rails helper for tabbed interface with control of current tab and different styled tabs.
 Very useful for web appications.
 
-More information: [http://rafael.adm.br/tabs-helper](http://rafael.adm.br/tabs-helper)
+More information: [http://rafael.adm.br/tabs_helper](http://rafael.adm.br/tabs_helper)
 
 Installation
 -------------
 
-ruby script/plugin install git://github.com/rafaelp/tabs-helper.git
+ruby script/plugin install git://github.com/rafaelp/tabs_helper.git
 
 If you got this plugin with SVN or Piston, run: ruby vendor/plugins/tabs-helper/install.rb
 
