@@ -1,23 +1,18 @@
-TabsHelper
-============
+# Tabs Helper
 
 This plugin is a Ruby on Rails helper for tabbed interface with control of current tab and different styled tabs.
 Very useful for web appications.
 
-More information: [http://rafael.adm.br/tabs_helper](http://rafael.adm.br/tabs_helper)
+## INSTALATION
 
-Installation
--------------
-
-ruby script/plugin install git://github.com/rafaelp/tabs_helper.git
+  ruby script/plugin install git://github.com/rafaelp/tabs_helper.git
 
 If you got this plugin with SVN or Piston, run: ruby vendor/plugins/tabs-helper/install.rb
 
 To use the tabs_helper you need to include the CSS stylesheet in the <head> of your layout template.
 You can do this either by manually including the files via `stylesheet_link_tag` OR by using the included `tabs_helper_includes` helper method, which will do this for you.
 
-Example
---------
+## EXAMPLE
 
     # Controller
     class DashboardController < ApplicationController
@@ -35,12 +30,24 @@ Example
       <%= tab.projects 'Projects', projects_path %>
     <% end %>
 
-Licence
---------
+## LICENSE
 
-Tabs Helper is released under the MIT licence.
+Tabs Helper is released under the MIT License.
 
-Author
--------
+## AUTHOR
 
-[Rafael Lima](http://rafael.adm.br)
+### **Rafael Lima**
+
+Working at [BielSystems](http://bielsystems.com.br)
+
+Blog: [http://rafael.adm.br](http://rafael.adm.br)
+
+Podcast: [http://rafael.adm.br/voltandopracasa](http://rafael.adm.br/voltandopracasa)
+
+Github: [http://github.com/rafaelp](http://github.com/rafaelp)
+
+Twitter: [http://twitter.com/rafaelp](http://twitter.com/rafaelp)
+
+### Did you like?
+
+[Recommend me at Working With Rails](http://workingwithrails.com/recommendation/new/person/14248-rafael-lima)
