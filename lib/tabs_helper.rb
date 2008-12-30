@@ -74,9 +74,9 @@ module TabsHelper
       def tabs(options={}, &block)
         raise ArgumentError, "Missing block" unless block_given?
 
-        concat('<ul class="tabs #{options[:class]}">')
+        concat('<ul class="tabs #{options[:class]}">', proc.binding)
         yield(Tab.new(self))
-        concat('</ul>')
+        concat('</ul>', proc.binding)
       end
 
       def tabs_includes(frontend = :default)
